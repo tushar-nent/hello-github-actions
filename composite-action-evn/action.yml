@@ -1,10 +1,21 @@
 name: Composite addition action evn
 description: Test evn
 
+inputs:
+  token:
+    description: 'A Github PAT'
+    required: true
+
+  test:
+    required: true
+
 runs:
   using: composite
   steps:
-    - run: |
+    - run: echo "git branch test"
       env:
-        INPUT_1: ${{ secrets.TEST }}
-        INPUT_1: ${{ secrets.TEST }}
+        GITHUB_TOKEN: ${{ inputs.token }}
+        TEST: ${{ inputs.token }}
+        INPUT_1: ${{ evn.TEST }}
+        INPUT_1: ${{ evn.TEST }}
+      shell: bash
