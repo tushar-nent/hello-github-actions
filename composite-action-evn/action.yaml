@@ -1,0 +1,10 @@
+name: Composite addition action evn
+description: Test evn
+
+runs:
+  using: composite
+  steps:
+    - run: |
+      env:
+        INPUT_1: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_1: ${{ secrets.TEST }}
