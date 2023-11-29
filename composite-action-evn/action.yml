@@ -15,7 +15,6 @@ runs:
     - run: echo "git branch test"
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
-        TEST: ${{ inputs.token }}
-        INPUT_1: ${{ evn.TEST }}
-        INPUT_1: ${{ evn.TEST }}
+        INPUT_1: ${{ inputs.test }}
+        INPUT_2: ${{ inputs.token }}
       shell: bash
