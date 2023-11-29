@@ -6,5 +6,5 @@ runs:
   steps:
     - run: |
       env:
-        INPUT_1: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_1: ${{ secrets.TEST }}
         INPUT_1: ${{ secrets.TEST }}
