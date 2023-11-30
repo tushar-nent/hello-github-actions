@@ -17,4 +17,5 @@ runs:
         GITHUB_TOKEN: ${{ inputs.token }}
         INPUT_1: ${{ inputs.test }}
         INPUT_2: ${{ inputs.token }}
+        INPUT_3: "test 3"
       shell: bash
