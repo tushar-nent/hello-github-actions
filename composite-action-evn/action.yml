@@ -13,6 +13,7 @@ runs:
   using: composite
   steps:
     - run: echo "git branch test"
+      echo "FOO=test foo" >> $GITHUB_ENV
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
         INPUT_1: ${{ inputs.test }}
